@@ -1,0 +1,8 @@
+export { default as Hero } from "./Hero"
+export { default as Portfolio } from "./Portfolio"
+export { default as Project } from "./Project"
+export { default as About } from "./About"
+export { default as Testimonies } from "./Testimonies"
+export { default as Footer } from "./Footer"
+export { default as ContactProfile } from "./ContactProfile"
+export { default as ContactForm } from "./ContactForm"
