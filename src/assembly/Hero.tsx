@@ -4,7 +4,7 @@ import navUtil from "../utils/nav"
 import hero from "../assets/images/hero.png"
 import menuImage from "../assets/images/hero-menu.png"
 import { useState } from "react"
-// import { SideBar } from "../components"
+import { SideBar } from "../components"
 
 const Hero = () => {
   const { headerNav } = navUtil
@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <Wrapper>
-      <div>
+      <div className='hero-container'>
         <NavBar
           title='@Ayush Barnwal'
           navList={headerNav}
@@ -31,8 +31,8 @@ const Hero = () => {
         <div className='running-container'>
           <h1>- Webflow Developer - UI/UX Designer - Webflow Developer</h1>
         </div>
-        {/* <SideBar /> */}
       </div>
+      {showSidebar ? <SideBar onClick={toggleSidebar} /> : null}
     </Wrapper>
   )
 }

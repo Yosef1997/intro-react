@@ -1,20 +1,20 @@
 import styled from "styled-components"
 
 const Wrapper = styled.section`
-  div {
+  .hero-container {
     background-color: #c7d0d9;
     height: 100vh;
     overflow: hidden;
   }
 
-  div .hero-image {
+  .hero-container .hero-image {
     position: absolute;
     bottom: 0px;
     right: 50%;
     transform: translateX(50%);
   }
 
-  div button {
+  .hero-container button {
     background-color: #0b0c0e;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ const Wrapper = styled.section`
     border-radius: 64.29px 0px 0px 64.29px;
   }
 
-  div button:hover span {
+  .hero-container button:hover span {
     display: block;
   }
 

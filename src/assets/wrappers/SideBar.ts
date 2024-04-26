@@ -2,33 +2,26 @@ import styled from "styled-components"
 
 const Wrapper = styled.aside`
   .sidebar-container {
-    display: grid;
-    grid-template-columns: repeat(2, 5fr);
     height: 100vh;
-    width: 100vw;
-    position: absolute;
+    width: 50vw;
     top: 0px;
     right: 0px;
-  }
-
-  .sidebar-container .sidebar-left {
+    padding: 67px;
     background-color: #0b0c0e;
-    opacity: 10%;
+    position: fixed;
   }
 
-  .sidebar-container .sidebar-right {
-    background-color: #0b0c0e;
-    padding: 57px 67px;
+  .sidebar-menu {
+    position: relative;
   }
-
-  .sidebar-container .sidebar-right button {
-    background-color: transparent;
-    border-width: 0px;
+  .sidebar-menu button {
     position: absolute;
-    right: 67px;
-    color: #f4f7fa;
+    right: 0px;
+    top: 0px;
+    background-color: #0b0c0e;
+    border-width: 0px;
+    color: #fff;
   }
-
   .sidebar-menu {
     padding-top: 57px;
     padding-bottom: 121px;
